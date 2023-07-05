@@ -19,3 +19,13 @@ void selectionsort(int vet[], int n){
         }
     }
 }
+
+int main (){
+    int vet[10];
+    int i; 
+
+    printf("Digite 10 numeros inteiros:\n");
+    for (i = 0; i < 10; i++){
+        printf("Numero %d: ", i+1);
+        scanf("%d", &vet[i]);
+    }
