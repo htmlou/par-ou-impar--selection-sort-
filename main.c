@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// primeiro adicionar estrutura do selection sort dentro do void.
 void selectionsort(int vet[], int n){
     int i, j, menor, aux;
 
@@ -19,7 +19,7 @@ void selectionsort(int vet[], int n){
         }
     }
 }
-
+// abrir main para incluir comando de printf e scamf
 int main (){
     int vet[10];
     int i; 
@@ -29,7 +29,7 @@ int main (){
         printf("Numero %d: ", i+1);
         scanf("%d", &vet[i]);
     }
-    
+// aplicar selection sort nos valores guardados pelo vetor
 selectionsort(vet, 10);
 
     printf("\nNumeros pares ordenados: ");
@@ -38,7 +38,7 @@ selectionsort(vet, 10);
             printf("%d ", vet[i]);
         }
     }
-
+// exibir númeors pares e impares ordenardos.
     printf("\nNumeros impares: ");
     for (i = 0; i < 10; i++){
         if (vet[i] % 2 != 0){
