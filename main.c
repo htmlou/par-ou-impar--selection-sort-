@@ -11,5 +11,11 @@ void selectionsort(int vet[], int n){
                 menor = j;
             }
         }
+        
+        if (menor != i){
+            aux = vet[i];
+            vet[i] = vet[menor];
+            vet[menor] = aux;
+        }
     }
 }
