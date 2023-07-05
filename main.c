@@ -29,3 +29,12 @@ int main (){
         printf("Numero %d: ", i+1);
         scanf("%d", &vet[i]);
     }
+    
+selectionsort(vet, 10);
+
+    printf("\nNumeros pares ordenados: ");
+    for (i = 0; i < 10; i++){
+        if (vet[i] % 2 == 0){
+            printf("%d ", vet[i]);
+        }
+    }
